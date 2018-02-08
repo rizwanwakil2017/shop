@@ -1,0 +1,125 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min.css' %}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/font-awesome.min.css' %}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/animate.min.css' %}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/font-electro.css' %}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/owl-carousel.css' %}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/colors/yellow.css' %}" media="all" />
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,700italic,800,800italic,600italic,400italic,300italic' rel='stylesheet' type='text/css'>
+
+    <link rel="shortcut icon" href="{% static 'assets/images/fav-icon.png' %}">
+</head>
+
+<body class="page home page-template-default">
+    <div id="page" class="hfeed site">
+        <!-- page start -->
+        <!-- /.top-bar start -->
+        {% block top_bar %}
+
+        {% endblock %}
+        <!-- /.top-bar end -->
+        {% block top_header %}
+                    {% block logo_search %}
+                    <!-- /.row header end here-->
+                    {% endblock %}
+
+                    {% block category_list %}
+
+                    {% endblock %}
+
+
+        {% endblock %}
+
+        <div id="content" class="site-content" tabindex="-1">
+            <div class="container">
+                <div id="primary" class="content-area">
+                    <main id="main" class="site-main">
+                        {% block main %}
+                        {% endblock %}
+                        {% block home_slider  %}
+
+                        {% endblock %}
+                        <!-- important category start -->
+                        {% block important_category %}
+
+                        <!-- important category end -->
+                        {% endblock %}
+                        <!-- special offer start -->
+                        {% block special_item %}
+                        <div class="home-v1-deals-and-tabs deals-and-tabs row animate-in-view fadeIn animated" data-animation="fadeIn">
+
+
+                            <!-- /.col -->
+                        <!-- special offer end -->
+                            {% endblock %}
+                            {% block feature_onsale_top_item %}
+
+                            <!-- /.tabs-block -->
+                            {% endblock %}
+                        </div>
+                        <!-- /.deals-and-tabs -->
+                        <!-- ============================================================= 2-1-2 Product Grid ============================================================= -->
+                        {% block special_category %}
+
+                        {% endblock %}
+                        <!-- ============================================================= 2-1-2 Product Grid : End============================================================= -->
+                        {% block best_sellers %}
+
+                        {% endblock %}
+                        {% block Recently_Added %}
+
+                        <!-- /.home-v1-banner-block -->
+
+
+                        {% endblock %}
+                    </main>
+                    <!-- #main -->
+                </div>
+                <!-- #primary -->
+
+            </div>
+            <!-- .container -->
+        </div>
+        <!-- #content -->
+        {% block detail_offer %}
+
+        {% endblock %}
+
+        {% block footer %}
+
+        <!-- #colophon -->
+        {% endblock %}
+    </div>
+    <!-- #page start -->
+
+
+
+
+    <script type="text/javascript" src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/tether.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/bootstrap-hover-dropdown.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/echo.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/jquery.waypoints.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/electro.js' %}"></script>
+
+</body>
+
+</html>
